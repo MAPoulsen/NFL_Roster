@@ -1,0 +1,22 @@
+.form-inline{
+    margin-top: 10px  
+}
+     
+ /*.panel{
+     background-color: rgba(66, 65, 65, 0.57);
+ }    */
+ 
+
+/*.panel-default>.panel-heading {
+     background-color: rgba(66, 65, 65, 0.57);
+     !important
+ }
+ .thumbnail{
+     background-color: rgba(66, 65, 65, 0.57);
+ }*/
+ .container{
+       background-color: rgba(66, 65, 65, 0.57);
+ }
+ .panel-heading{
+      position:10px
+ }
