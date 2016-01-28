@@ -22,6 +22,7 @@ Fantasy Football!!!
 12. Create a from inside the "player-form" div
 13. Add an input field for Player Name, Position, and Number
 14. When the add button is pressed, it should automatically add a player to the Roster.
+
 15. Create a constructor for Player that accepts 3 arguments, Name, Position, Number.
 16. When the Add button is pressed, a new player is created and added to the Players array.
 17. Use JQuery to target the "player-roster" div, and append the player.
