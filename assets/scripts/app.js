@@ -1,4 +1,27 @@
 
+var performer= function(name, act, ring){
+  this.name= name;
+  this.act= act;
+  this.ring= ring;
+}
+$('#addPerformerBtn').on('click', function(){
+  var name= $('#name').text();
+  var act= $('#act').text();
+  var ring= $('#ring').text();
+  
+  var performer = new Performer(name, act, ring);
+  var card = $('<div class="performer-card"></div');
+  var html = $('#playerCardTemplate').html();
+  console.log('Card: ', html);
+  
+  $('#roster').append(card);
+});
+
+
+
+
+
+
 
 // var players = [];
 //  var nfl = {
@@ -6,11 +29,11 @@
 //  } 
 //   var playerListElem = document.getElementById('player-list');
   
-  function player(Name, Position, Number){
-      this.name= name;
-      this.position= position;
-      this.number= number;
-  }
+//   function player(Name, Position, Number){
+//       this.name= name;
+//       this.position= position;
+//       this.number= number;
+//   }
   
   
 //  function Player(name, salary, url, inStock){
