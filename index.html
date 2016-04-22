@@ -16,63 +16,70 @@
 
 <!--<body class="container">-->
 
-	<body>
+<body>
 
-		<div class="container">
-			<div class="panel panel-default">
-        <div class="panel-heading">My NFL Roster</div>
-        <div class="panel-body">
-          <div class="player-form">
-            <form class="form-horizontal">
-              <div class="form-group">
-                <label for="name" class="col-sm-2 control-label">Name</label>
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" id="name" placeholder="Name">
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">My NFL Roster</div>
+            <div class="panel-body">
+                <div class="player-form">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="name" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="act" class="col-sm-2 control-label">Act</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name="act" placeholder="Act">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ring" class="col-sm-2 control-label">Ring</label>
+                            <div class="col-sm-2">
+                                <input type="ring" class="form-control" name="ring">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button id="addPerformerBtn" class="btn btn-success">Add Performer</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-              </div>
-              <div class="form-group">
-                <label for="act" class="col-sm-2 control-label">Act</label>
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" id="act" placeholder="Act">
+                <div class="row">
+                    <div id="roster" class="performer-roster">
+                        <!--<div id="performerCardTemplate" class="performer-card">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/">
+                                    <div class="caption">
+                                      
+                                        <div><h3>Name </h3></div>
+                                        <div><strong>Act: </strong></div>
+                                        <div><strong>Ring: </strong></div>
+                                        <button class="btn btn-danger" type="remove">HOT HEAD</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                      -->
+                    </div>
                 </div>
-              </div>
-              <div class="form-group">
-                <label for="ring" class="col-sm-2 control-label">Ring</label>
-                <div class="col-sm-2">
-                  <input type="ring" class="form-control" id="ring">
-                </div>
-              </div>              
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button id="addPerformerBtn" class="btn btn-success">Add Performer</button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div id="roster" class="performer-roster">
-            <div id="performerCardTemplate" class="performer-card">
-              <div class="row">
-                <div class="col-md-2">
-                  <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/"/>
-                </div>
-                <div class="col-md-6">
-                  <div><strong>Name: </strong></div>
-                  <div><strong>Act: </strong></div>
-                  <div><strong>Ring: </strong></div>
-                </div>
-              </div>
-              
             </div>
-          </div>
         </div>
-      </div>
-		</div>
+    </div>
+    </div>
 
 
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
     <script src="assets/scripts/app.js"></script>
+    <script src="performer-services.js"></script>
+    <script src="performer-controller.js"></script>
+
 </body>
 
 <!-- Latest compiled and minified JavaScript -->
