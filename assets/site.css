@@ -9,7 +9,7 @@
 
 .panel-default>.panel-heading {
      background-color: rgba(66, 65, 65, 0.57);
-     
+     text-align: center;
  }
  .thumbnail{
      background-color: rgba(66, 65, 65, 0.57);
@@ -32,5 +32,6 @@
   .caption>button{
      text-align: center;
  }
- .performer-card{
+ #performerCardTemplate{
+     text-align: center;
  }
