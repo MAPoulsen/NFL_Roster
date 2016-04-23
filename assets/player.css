@@ -1,0 +1,42 @@
+.form-inline{
+    margin-top: 10px  
+}
+     
+ .panel{
+     background-color: rgba(66, 65, 65, 0.57);
+ }   
+ 
+
+.panel-default>.panel-heading {
+     background-color: rgba(66, 65, 65, 0.57);
+     text-align: center;
+ }
+ .thumbnail{
+     background-color: rgba(66, 65, 65, 0.57);
+       border: 1px solid darkred;
+  display: inline-block;
+  color: lightgrey;
+     
+ }
+ .container{
+       background-color: Black;
+     display: inline-block;
+  
+ }
+ .panel-heading{
+      position:10px
+ }
+ .caption>div{
+     color: lightgrey;
+     text-align: center;
+ }
+  .caption>button{
+     text-align: center;
+ }
+ #performerCardTemplate{
+     text-align: center;
+
+ }
+.form-group label{
+    color: lightgrey;
+}
