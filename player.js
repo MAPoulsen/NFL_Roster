@@ -51,7 +51,7 @@ function drop(event) {
     }
     else {
         createPlayerCard(player);
-    }
+    }if(roster[player.position === 'QB'])
 }
 
 function allowDrop(event) {
