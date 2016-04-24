@@ -18,40 +18,78 @@
 
 <body>
 
+
     <div class="container">
-        <div class="panel panel-default">
-            <div class="panel-heading">My NFL Roster</div>
-            <div class="panel-body">
-                <div class="player-form">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label for="name" class="col-sm-2 control-label">Name</label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" name="name" placeholder="Name">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>NFL Roster</h2>
+                    </div>
+                    <div class="panel-body">
+                        <button class="search btn btn-default">Player Search</button>
+                        <button class="clear-filter-button btn btn-danger">Clear</button>
+                        <input type="text" class="player-input" id="query">
+                        <div class="scroller" >
+                            <div class="player-list">
+                                <!--//media-->
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="position" class="col-sm-2 control-label">Position</label>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" name="position" placeholder="Position">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="num" class="col-sm-2 control-label">Number</label>
-                            <div class="col-sm-2">
-                                <input type="num" class="form-control" name="num" placeholder="Number">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button id="addPlayerBtn" class="btn btn-success">Add Player</button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
-                <div class="row">
-                    <div id="roster" class="player-roster">
-                        <!--<div id="performerCardTemplate" class="performer-card">
+
+            </div>
+
+            <div class="col-sm-8">
+
+                <div class="panel panel-default">
+
+                    <div class="panel-heading">
+                        <h2>My Dream Team</h2>  
+                        <span> Drag your favorite players from the list and drop them into your roster!</span>
+                    </div>
+
+                    <div class="player-roster" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!--<div class="panel panel-default">
+                    <div class="panel-heading">Create a Player</div>
+                    <div class="panel-body">
+                        <div class="player-form">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="name" class="col-sm-2 control-label">Name</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" name="name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="position" class="col-sm-2 control-label">Position</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" name="position" placeholder="Position">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="num" class="col-sm-2 control-label">Number</label>
+                                    <div class="col-sm-2">
+                                        <input type="num" class="form-control" name="num" placeholder="Number">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button id="addPlayerBtn" class="btn btn-success">Add Player</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>-->
+    <!--<div class="row">
+                            <div id="roster" class="player-roster">-->
+    <!--<div id="performerCardTemplate" class="performer-card">
                             <div class="col-sm-6 col-md-4">
                                 <div class="thumbnail">
                                     <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/">
@@ -65,12 +103,10 @@
                                 </div>
                             </div>
                         </div>                      -->
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     </div>
+    </div>
+
 
 
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>

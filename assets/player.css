@@ -1,11 +1,8 @@
-.form-inline{
-    margin-top: 10px  
-}
-     
- .panel{
+   
+ .panel body{
      background-color: rgba(66, 65, 65, 0.57);
+     text-align: center;
  }   
- 
 
 .panel-default>.panel-heading {
      background-color: rgba(66, 65, 65, 0.57);
@@ -20,11 +17,13 @@
  }
  .container{
        background-color: Black;
-     display: inline-block;
+        display: inline-block;
+        padding-top:20px;
   
  }
  .panel-heading{
-      position:10px
+      position:10px;
+      color: white;
  }
  .caption>div{
      color: lightgrey;
@@ -33,10 +32,19 @@
   .caption>button{
      text-align: center;
  }
- #performerCardTemplate{
-     text-align: center;
 
- }
-.form-group label{
-    color: lightgrey;
+.player-roster {
+    display: block;
+    margin: auto;
+    text-align: center;
+    min-height: 100px;
+    min-width: 100px;
+    border: 1px solid #337AB7;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.scroller{
+    overflow-y: scroll; 
+    height: 400px;
 }
