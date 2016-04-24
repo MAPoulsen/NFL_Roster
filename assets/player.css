@@ -2,7 +2,14 @@
  .panel body{
      background-color: rgba(66, 65, 65, 0.57);
      text-align: center;
- }   
+ }  
+ .panel button{
+     text-align:center;
+ } 
+  .panel input{
+     text-align: center;
+     margin-top: 5px;
+ } 
 
 .panel-default>.panel-heading {
      background-color: rgba(66, 65, 65, 0.57);
@@ -19,11 +26,15 @@
        background-color: Black;
         display: inline-block;
         padding-top:20px;
+        max-width: 1500px;
   
  }
  .panel-heading{
       position:10px;
       color: white;
+ }
+ .panel-body{
+  background-color: grey;   
  }
  .caption>div{
      color: lightgrey;
@@ -43,8 +54,21 @@
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
+    padding-top: 10px;
+    background-color: white;
 }
 .scroller{
     overflow-y: scroll; 
     height: 400px;
+    background-color:white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card{
+    display: inline-block;
+}
+.media{
+    border: 1px solid black;
 }
